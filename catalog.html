@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Product Description</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   <link href="catalog.css" rel="stylesheet"/>
+   <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+   <link rel="stylesheet" href="index.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    
+
+   <style>
+    .mySlides{
+      display: none;
+    }
+    legend img{
+      height: 43px;
+    }
+      .language1{
+         color:#FFF;
+         color: #EEE;
+         text-align: right;
+         font-family: 'ambleregular','Open Sans', Arial, sans-serif;
+         font-size: 15px;
+         height: 45px;
+         font-weight: bold;
+         float: right;
+      }
+   </style>
+
+</head>
+
+<body>
+   <header>
+      <h1>
+      <legend><img src="images/Capture.png" alt="Tele Shop">
+      <span class="language1"><a href="#"> Language </a></span>
+      </legend>
+     </h1>
+      
+      <div class="header_bottom">
+         <div class="mainBox">
+            <ul>
+               <ul class="active"><a href="Index.html">Home</a></ul>
+               <ul><a href="about.html">About Us </a> </ul>
+               <ul><a href="catalog.html">Catalog </a></ul>
+               <ul><a href="deals.html">Deals </a></ul>
+               <ul><a href="Advertisements.html">Advertisements </a></ul>
+               <div class="clear"></div>
+            </ul>
+         </div>
+         <div class="Search">
+         <form>
+            <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+            <!--<input type="submit" value=""> -->
+         </form>
+         </div>
+         <div class="clear"></div>
+      </div>
+   </header>
+
+   <div class="header_bottom_left">
+      <div class="categories">
+        <ul>
+        <h3>Categories</h3>
+        <li><a href="#home">Home Appliances</a></li>
+         <li><a href="#kitchen">Kitchen appliances</a></li>
+         <li><a href="#fitness">Fitness products</a></li>
+        <li><a href="#beauty">Beauty products</a></li>
+         <li><a href="#hair">Hair products</a></li>
+         </ul>
+         </div>
+         </div>
+   <!-- slider-->
+
+   <div class="w3-content w3-display-container">
+    <img class="mySlides" src="images/Kitchen-Appliances.jpg" style="width:80%">
+    <img class="mySlides" src="images/product.jpg" style="width:85%">
+	 <img class="mySlides" src="images/beauty-products.jpg" style="width:80%">
+   <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+  <!--For Home Appliances *******
+	<div class="main">
+	<div class="content">-->
+
+		<div class="content_bottom">
+			<div class="Headings">
+	         <h3 id="home">Home Appliances</h3>
+	     </div>
+	     <div class="see">
+			<p><a href="Advertisements.html">See Tv Ad for more details</a></p>
+		</div>
+      <div class="clear"></div>
+	</div>
+		
+		<div class="content group">
+   	<div class="section images">
+   		<img src="images/sofa.jpeg" alt=""/>
+   		<h2>5 in 1 sofa bed</h2>
+   		<div class="price-details">
+   			<div class="price-number">
+   				<p><span class="Dollars">$49.99</span></p>
+   			</div>
+   			<button type="button" class="btn btn-success">
+<span class="glyphicon glyphicon-shopping-cart"
+aria-hidden="true"></span>Cart
+</button>
+</div>
+</div>
+     
+<div class="section images">
+      <img src="mini_vacuum.jpg" alt=""/>
+      <h2>Mini Vacuum</h2>
+      <div class="price-details">
+        <div class="price-number">
+          <p><span class="Dollars">$79.99</span></p>
+        </div>
+        <button type="button" class="btn btn-success">
+<span class="glyphicon glyphicon-shopping-cart"
+aria-hidden="true"></span>Cart
+</button>
+      </div>
+      </div>
+
+      <div class="section images">
+      <img src="washer.jpg" alt=""/>
+      <h2>High Pressure Washer</h2>
+      <div class="price-details">
+        <div class="price-number">
+          <p><span class="Dollars">$120.99</span></p>
+        </div>
+        <button type="button" class="btn btn-success">
+        <span class="glyphicon glyphicon-shopping-cart"
+        aria-hidden="true"></span>Cart
+        </button>
+      </div>
+      </div>
+
+      <div class="section images">
+      <img src="images/shoes.jpg" alt=""/>
+      <h2>Water-proof Shoes</h2>
+      <div class="price-details">
+        <div class="price-number">
+          <p><span class="Dollars">$29.99</span></p>
+        </div>
+        <button type="button" class="btn btn-success">
+        <span class="glyphicon glyphicon-shopping-cart"
+        aria-hidden="true"></span>Cart
+        </button>
+      </div>
+      </div>
+
+      <div class="section images">
+      <img src="images/cover1.jpg" alt=""/>
+      <h2>Bed-Sheet set</h2>
+      <div class="price-details">
+        <div class="price-number">
+          <p><span class="Dollars">$49.99</span></p>
+        </div>
+        <button type="button" class="btn btn-success">
+        <span class="glyphicon glyphicon-shopping-cart"
+        aria-hidden="true"></span>Cart
+        </button>
+      </div>
+      </div>
+
+      <div class="section images">
+      <img src="images/cover2.jpg" alt=""/>
+      <h2>Bed-Sheet set</h2>
+      <div class="price-details">
+        <div class="price-number">
+          <p><span class="Dollars">$49.99</span></p>
+        </div>
+        <button type="button" class="btn btn-success">
+        <span class="glyphicon glyphicon-shopping-cart"
+        aria-hidden="true"></span>Cart
+        </button>
+      </div>
+      </div>
+
+      <div class="section images">
+      <img src="images/cover3.jpg" alt=""/>
+      <h2>Bed-Sheet set</h2>
+      <div class="price-details">
+        <div class="price-number">
+          <p><span class="Dollars">$49.99</span></p>
+        </div>
+        <button type="button" class="btn btn-success">
+        <span class="glyphicon glyphicon-shopping-cart"
+        aria-hidden="true"></span>Cart
+        </button>
+      </div>
+      </div>
+
+   </div>
+
+<!--Kitech appliances
+<div class="content">-->
+   	<div class="content_bottom">
+	<div class="Headings">
+		<h3 id="kitchen">Kitchen Appliances</h3>
+		</div>
+		<div class="see">
+			<p><a href="Advertisements.html">See Tv Ad for more details</a></p>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+   <div class="content group">
+   	<div class="section images">
+   		<img src="images/blender.jpg" alt=""/> 
+   		<h2> Magic Blender</h2>
+   		<div class="price-details">
+   			<div class="price-number">
+   				<p><span class="Dollars">$59.99</span></p>
+   			</div>
+   			<button type="button" class="btn btn-success">
+<span class="glyphicon glyphicon-shopping-cart"
+aria-hidden="true"></span>Cart
+</button>
+
+   		</div>
+   	</div>
+    <div class="section images">
+      <img src="images/saladchef.jpg" alt=""/> 
+      <h2> Salad Chef</h2>
+      <div class="price-details">
+        <div class="price-number">
+          <p><span class="Dollars">$39.99</span></p>
+        </div>
+        <button type="button" class="btn btn-success">
+<span class="glyphicon glyphicon-shopping-cart"
+aria-hidden="true"></span>Cart
+</button>
+</div>
+</div>
+
+   	<div class="section images">
+   		<img src="images/rice-cooker.jpg" alt=""/>
+   		<h2>Rice Cooker</h2>
+   		<div class="price-details">
+   			<div class="price-number">
+   				<p><span class="Dollars">$69.99</span></p>
+   			</div>
+   			<button type="button" class="btn btn-success">
+<span class="glyphicon glyphicon-shopping-cart"
+aria-hidden="true"></span>Cart
+</button>
+
+   		</div>
+   	</div>
+     
+   	<div class="section images">
+   		<img src="images/hot-lunch.jpg" alt=""/>
+   		<h2>Electric lunch Box</h2>
+   		<div class="price-details">
+   			<div class="price-number">
+   				<p><span class="Dollars">$49.99</span></p>
+   			</div>
+   			<button type="button" class="btn btn-success">
+<span class="glyphicon glyphicon-shopping-cart"
+aria-hidden="true"></span>Cart
+</button>
+   		</div>
+   	</div>
+      <div class="section images">
+      <img src="images/Magic-Blullet.jpg" alt=""/>
+      <h2>Magic Bullet Blender</h2>
+      <div class="price-details">
+        <div class="price-number">
+          <p><span class="Dollars">$79.99</span></p>
+        </div>
+        <button type="button" class="btn btn-success">
+<span class="glyphicon glyphicon-shopping-cart"
+aria-hidden="true"></span>Cart
+</button>
+      </div>
+    </div>
+    <div class="section images">
+      <img src="images/rotimaker.jpg" alt=""/>
+      <h2>Soft roti-maker</h2>
+      <div class="price-details">
+        <div class="price-number">
+          <p><span class="Dollars">$49.99</span></p>
+        </div>
+        <button type="button" class="btn btn-success">
+<span class="glyphicon glyphicon-shopping-cart"
+aria-hidden="true"></span>Cart
+</button>
+      </div>
+      </div>
+
+   </div>
+
+
+   <div class="content_bottom">
+
+      <!--Fitness Products
+<div class="content">-->
+   <div class="Headings">
+      <h3 id="fitness">Fitness Products</h3>
+      </div>
+      <div class="see">
+         <p><a href="Advertisements.html">See Tv Ad for more details</a></p>
+      </div>
+      <div class="clear"></div>
+   </div>
+
+   <div class="content group">
+      <div class="section images">
+         <img src="images/Ab Rocket Twister.jpg" alt=""/> 
+         <h2> Ab Rocket Twister</h2>
+         <div class="price-details">
+            <div class="price-number">
+               <p><span class="Dollars">$600</span></p>
+            </div>
+            <button type="button" class="btn btn-success">
+            <span class="glyphicon glyphicon-shopping-cart"
+            aria-hidden="true"></span>Cart
+            </button>
+         </div>
+      </div>
+      
+
+      <div class="section images">
+         <img src="images/six-pack-care.jpg" alt=""/>
+         <h2>Six Pack Care</h2>
+         <div class="price-details">
+            <div class="price-number">
+               <p><span class="Dollars">$500.00</span></p>
+            </div>
+            <button type="button" class="btn btn-success">
+          <span class="glyphicon glyphicon-shopping-cart"
+          aria-hidden="true"></span>Cart
+          </button>
+          </div>
+         </div> 
+      
+
+      <div class="section images">
+         <img src="images/body-shaper.jpg" alt=""/>
+         <h2>Body Shaper</h2>
+         <div class="price-details">
+            <div class="price-number">
+               <p><span class="Dollars">$200.00</span></p>
+            </div>
+            <button type="button" class="btn btn-success">
+            <span class="glyphicon glyphicon-shopping-cart"
+            aria-hidden="true"></span>Cart
+            </button>
+            <div class="clear"></div>
+         </div>
+      </div>
+     
+      <div class="section images">
+         <img src="images/Body-buldio.jpg" alt=""/>
+         <h2>Body Buldio</h2>
+         <div class="price-details">
+            <div class="price-number">
+               <p><span class="Dollars">$100.00</span></p>
+            </div>
+            <button type="button" class="btn btn-success">
+            <span class="glyphicon glyphicon-shopping-cart"
+            aria-hidden="true"></span>Cart
+            </button>
+         </div>
+      </div>
+      <div class="section images">
+         <img src="images/trademill.jpg" alt=""/>
+         <h2>Digital Trademill</h2>
+         <div class="price-details">
+            <div class="price-number">
+               <p><span class="Dollars">$1599.99</span></p>
+            </div>
+            <button type="button" class="btn btn-success">
+            <span class="glyphicon glyphicon-shopping-cart"
+            aria-hidden="true"></span>Cart
+            </button>
+         </div>
+      </div>
+      <div class="section images">
+         <img src="images/mat.jpg" alt=""/>
+         <h2>Electric full Body Massaging Mat</h2>
+         <div class="price-details">
+            <div class="price-number">
+               <p><span class="Dollars">$99.99</span></p>
+            </div>
+            <button type="button" class="btn btn-success">
+            <span class="glyphicon glyphicon-shopping-cart"
+            aria-hidden="true"></span>Cart
+            </button>
+         </div>
+      </div> 
+   </div>
+<!--beauty -->
+   <div class="content_bottom">
+   <div class="Headings">
+      <h3 id="beauty">Beauty Products</h3>
+      </div>
+      <div class="see">
+        <p><a href="Advertisements.html">See Tv Ad for more details</a></p>
+      </div>
+      <div class="clear"></div>
+   </div>
+   <div class="content group">
+
+      <div class="section images">
+         <img src="images/annai-bamboo.jpg" alt=""/> 
+         <h2> Annai Bamboo</h2>
+         <div class="price-details">
+            <div class="price-number">
+               <p><span class="Dollars">$79.00</span></p>
+            </div>
+            <button type="button" class="btn btn-success">
+<span class="glyphicon glyphicon-shopping-cart"
+aria-hidden="true"></span>Cart
+</button>
+
+         </div>
+      </div>
+
+      <div class="section images">
+         <img src="images/beauty-products.jpg" alt=""/>
+         <h2>Pro-active</h2>
+         <div class="price-details">
+            <div class="price-number">
+               <p><span class="Dollars">$69.99</span></p>
+            </div>
+            <button type="button" class="btn btn-success">
+            <span class="glyphicon glyphicon-shopping-cart"
+            aria-hidden="true"></span>Cart
+            </button>
+         </div>
+      </div>
+   </div>
+   <!-- Hair Products-->
+    <div class="content_bottom">
+   <div class="Headings">
+      <h3 id="hair">Hair Care</h3>
+      </div>
+      <div class="see">
+         <p><a href="#">See All Products</a></p>
+      </div>
+      <div class="clear"></div>
+   </div>
+   <div class="content group">
+
+      <div class="section images">
+         <img src="images/Hair-Building fiber.jpg" alt=""/> 
+         <h2> Hair Building Fiber</h2>
+         <div class="price-details">
+            <div class="price-number">
+               <p><span class="Dollars">$200.00</span></p>
+            </div>
+            <button type="button" class="btn btn-success">
+<span class="glyphicon glyphicon-shopping-cart"
+aria-hidden="true"></span>Cart
+</button>
+
+         </div>
+      </div>
+
+      <div class="section images">
+         <img src="images/in-styler.jpg" alt=""/>
+         <h2>In-Styler</h2>
+         <div class="price-details">
+            <div class="price-number">
+               <p><span class="Dollars">$100.00</span></p>
+            </div>
+            <button type="button" class="btn btn-success">
+            <span class="glyphicon glyphicon-shopping-cart"
+            aria-hidden="true"></span>Cart
+            </button>
+         </div>
+      </div>
+      <div class="section images">
+         <img src="images/shampoo.jpeg" alt=""/>
+         <h2>Black Hair Shampoo</h2>
+         <div class="price-details">
+            <div class="price-number">
+               <p><span class="Dollars">$39.99</span></p>
+            </div>
+            <button type="button" class="btn btn-success">
+            <span class="glyphicon glyphicon-shopping-cart"
+            aria-hidden="true"></span>Cart
+            </button>
+         </div>
+      </div>
+      <div class="section images">
+         <img src="images/hair.jpg" alt=""/>
+         <h2>Hair Straightening Brush</h2>
+         <div class="price-details">
+            <div class="price-number">
+               <p><span class="Dollars">$49.99</span></p>
+            </div>
+            <button type="button" class="btn btn-success">
+            <span class="glyphicon glyphicon-shopping-cart"
+            aria-hidden="true"></span>Cart
+            </button>
+         </div>
+      </div>
+   </div>
+<!----footer-->
+
+<div class="footer">
+   <div class="row">
+      <div class="col-md-6">
+        <p> Contact Us</p>
+         Old Baneshwor
+         <br> Kathmandu, Nepal
+         <br> +977 9845076376
+         <br> support@teleshop.com
+      </div>
+
+      <div class="col-md-6">
+         <h5>About the Company</h5>
+         <p> Tele-shop Nepal is the ultimate shopping solution for all our special customers from nepal. It offers a wide and assorted range of products.</p>
+
+      </div>
+
+      <div class="social-icons">
+  <h4> Follow Us</h4>
+  <ul>
+    <a href="#" target="_blank"><img src="icons/facebook.png" alt="" /></a>
+    
+
+    <a href="#" target="_blank"><img src="icons/twitter.png" alt="" /></a></li>
+    
+
+      <li><a href="#" target="_blank"><img src="icons/insta.png" alt="" /> </a></li>
+    
+     <div class="clear"></div>
+  </ul>
+</div>
+<div class="copy_right">
+  <p>&copy;2019 Tele_Shop Nepal. All rights reserved</p>
+</div>
+
+   </div>
+
+</div>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
